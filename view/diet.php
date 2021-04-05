@@ -1,5 +1,5 @@
-<?php include('header.php')?>
-  
+<?php include('header.php') ?>
+
 <div class="container text-center">    
   <h3>What We Do</h3><br>
   <div class="row">

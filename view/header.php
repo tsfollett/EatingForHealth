@@ -24,22 +24,22 @@
     <nav class="navbar topnav">
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link" href="index.php">Home</a>
+                <a class="nav-link" href="view/index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="diet.php">The Diet</a>
+                <a class="nav-link" href="view/diet.php">The Diet</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="view/meal-support.php" role="button" aria-haspopup="true" aria-expanded="false">
                     Meal Support</a>
                 <div class="dropdown-menu topnav-dropdown">
-                    <a class="dropdown-item" href="substitutes.php">Substitutes</a>
-                    <a class="dropdown-item" href="recipes.php">Recipes</a>
-                    <a class="dropdown-item" href="weekplan.php">Sample Week Plan</a>
+                    <a class="dropdown-item" href="view/substitutes.php">Substitutes</a>
+                    <a class="dropdown-item" href="view/recipes.php">Recipes</a>
+                    <a class="dropdown-item" href="view/weekplan.php">Sample Week Plan</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="resources.php">Resources</a>
+                <a class="nav-link" href="view/resources.php">Resources</a>
             </li>
         </ul>
     </nav>
