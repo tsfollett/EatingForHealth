@@ -24,7 +24,7 @@
     <nav class="navbar topnav">
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link" href="view/index.php">Home</a>
+                <a class="nav-link" href="view/welcome.php">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="view/diet.php">The Diet</a>
