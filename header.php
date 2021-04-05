@@ -1,33 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Eating4Health</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="logo1.png">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Eating4Health</title>
+  </head>
   
-</head>
 <body>
-    <div class="container">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">
-         <img src="logo2.png" alt="Logo" style="width:100px;">
+<div class="container">
+    <div class="logos">
+    <a href="index.php">
+         <img src="images/NBFM_logo.png" alt="New Beginnings Functional Medicine logo" style="width:200px;">
        </a>
-    <div class="topnav" id="myTopnav">
-        <a href="home.html" class="active">Home</a>
-        <a href="diet.html">The Diet</a>
-        <div class="dropdown">
-          <button class="dropbtn">Meal Support
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="substitutes.html">Substitutes</a>
-            <a href="recipes.html">Recipes</a>
-            <a href="weekplan.html">Weekly Planner</a>
-          </div>
-        </div>
-        <a href="resources.html">Resources</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+    </div>
+
+    <nav class="navbar topnav">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="diet.php">The Diet</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Meal Support</a>
+                <div class="dropdown-menu topnav-dropdown">
+                    <a class="dropdown-item" href="substitutes.php">Substitutes</a>
+                    <a class="dropdown-item" href="recipes.php">Recipes</a>
+                    <a class="dropdown-item" href="weekplan.php">Sample Week Plan</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resources.php">Resources</a>
+            </li>
+        </ul>
+    </nav>
+
