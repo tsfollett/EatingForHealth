@@ -16,14 +16,14 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/download.jpeg" class="d-block w-100" alt="meal">
+      <img src="view/images/download.jpeg" class="d-block w-100" alt="meal">
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/download1.jpeg" class="d-block w-100" alt="food">
+      <img src="view/images/download1.jpeg" class="d-block w-100" alt="food">
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
