@@ -48,7 +48,6 @@
     <p><a href="resource_files/Anti-inflammatoryEliminationDiet.pdf" target="_blank">Download Phase 1 List</a> &#40;PDF&#41;</p>
   </div>
 
-<!--This is not showing up...need to work on-->
   <div class="col-md-7">
   <b>Take a tour of the site&colon;</b>
     <div class="embed-responsive embed-responsive-16by9">
@@ -61,6 +60,15 @@
 <h4><u>Phase 2</u></h4>
 <p>In your next appointment, you will make a plan with Dr. Shannon to reintroduce
   foods not on your food sensitivity list.</p>
+
+<h4><u>Why am I on this diet?</u></h4>
+  <ol>
+    <li class="dark-text"><b>To decrease inflammation and improve your health!</b></li>
+    <li>To find out what foods are affecting your body's health</li>
+    <li>To learn how to find and choose healthy food in the store, including how to read ingredient lists</li>
+    <li>To make sure you are drinking enough water every day &#40;drink 1/2 your body weight&#41;</li>
+    <li>To learn to include enough protein and vegetables in your meals</li>
+  </ol>
 
 <!--need to add more-->
 <h3>Consider Membership!</h3>
