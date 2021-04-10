@@ -61,15 +61,18 @@
 <p>In your next appointment, you will make a plan with Dr. Shannon to reintroduce
   foods not on your food sensitivity list.</p>
 
+<br>
 <h4><u>Why am I on this diet?</u></h4>
   <ol>
     <li class="dark-text"><b>To decrease inflammation and improve your health!</b></li>
     <li>To find out what foods are affecting your body's health</li>
     <li>To learn how to find and choose healthy food in the store, including how to read ingredient lists</li>
-    <li>To make sure you are drinking enough water every day &#40;drink 1/2 your body weight&#41;</li>
-    <li>To learn to include enough protein and vegetables in your meals</li>
+    <li>To make sure you are drinking enough water every day &#40;drink 1/2 of your body&rsquo;s weight&#41;</li>
+    <li>To learn to include protein and vegetables in your meals</li>
   </ol>
+<p><a href="resource_files/goalsOfDiet.pdf" target="_blank">Download the goals list</a> &#40;PDF&#41;</p>
 
+<br>
 <!--need to add more-->
 <h3>Consider Membership!</h3>
 
