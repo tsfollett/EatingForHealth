@@ -12,6 +12,15 @@
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
+    <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    </style>
     <title>Eating4Health</title>
   </head>
   

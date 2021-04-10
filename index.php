@@ -14,6 +14,6 @@
             include('view/welcome.php');
             break;
         default:
-            include('view/welcome.php');
+            $recipe = get_recipes();
     }
     
