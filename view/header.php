@@ -20,7 +20,7 @@
       <div class="row logos">
         <div class="col-sm">
           <a href="welcome.php">
-            <img src="images/logo.png" class="text-left" alt="Logo for Eating 4 Health" style="width:100px;"></a>
+            <img src="images/E4H_logo.png" class="text-left" alt="Logo for Eating 4 Health" style="width:150px;"></a>
             <!-- <h1 class="text-center">Eating4Health</h1> -->
         </div>
         <div class="col-sm"></div>
