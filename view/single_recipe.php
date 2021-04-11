@@ -1,5 +1,24 @@
 <?php include('header.php'); ?>
+<?php require('../model/recipe.php'); ?>
+<?php require('../model/database.php') ?>
 
-<?php $id = filter_input(INPUT_GET, 'rid', FILTER_VALIDATE_INT); ?>
+<?php $id = filter_input(INPUT_GET, 'rid', FILTER_VALIDATE_INT);
+$ingredients = get_ingredients($id);
+$recipe = get_recipe($id); ?>
 
+<main>
+<h1 style="text-align: center;"><?php echo $recipe['recipe_name']; ?></h1>
+<div id="column1" style="float:left; width:23%; padding: 0 10px;">
+<h2 style="text-align: center;">Ingredients</h2>
+<ul>
+<?php foreach($ingredients as $i) : ?> 
+    <li><?php $formatted = $i["measurement_qty"]." ".$i["measurement"]." ".$i["ingredient_name"]; echo $formatted; ?></li>
+<?php endforeach; ?>
+</ul>
+</div>
+<div id="column2" style="float:left; width:auto; padding: 10 20px;">
+<h2 style="text-align: center;">Recipe Steps</h2>
+<?php echo $recipe['description']; ?>
+</div>
+</main><br><br><br>
 <?php include('footer.php'); ?>
