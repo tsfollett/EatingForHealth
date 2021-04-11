@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Apr 05, 2021 at 01:53 AM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 8.0.3
+-- Host: 127.0.0.1
+-- Generation Time: Apr 12, 2021 at 12:18 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -37,7 +37,13 @@ CREATE TABLE `allergen` (
 --
 
 INSERT INTO `allergen` (`allergen_id`, `allergen`) VALUES
-(1, 'gluten');
+(1, 'gluten'),
+(2, 'eggs'),
+(3, 'dairy'),
+(4, 'sugar'),
+(5, 'nuts'),
+(6, 'shellfish'),
+(7, 'None');
 
 -- --------------------------------------------------------
 
@@ -299,7 +305,9 @@ INSERT INTO `measurement` (`measurement_id`, `measurement`) VALUES
 (5, 'quart'),
 (6, 'pint'),
 (7, 'gallon'),
-(8, 'bag');
+(8, 'bag'),
+(9, 'each'),
+(10, 'slices');
 
 -- --------------------------------------------------------
 
@@ -338,7 +346,28 @@ INSERT INTO `meaurement_qty` (`measurement_qty_id`, `measurement_qty`) VALUES
 CREATE TABLE `recipe` (
   `recipe_id` int(11) NOT NULL,
   `recipe_name` varchar(32) NOT NULL,
-  `description` varchar(128) NOT NULL
+  `description` varchar(128) NOT NULL,
+  `category` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `recipe`
+--
+
+INSERT INTO `recipe` (`recipe_id`, `recipe_name`, `description`, `category`) VALUES
+(2, 'Oatmeal', 'Combine Water or Milk and Oats with salt (as desired).  Heat in microwave on high for two minutes.', 'Breakfast'),
+(3, 'Ham Sandwich', 'Ham and Bread with optional toppings.', 'Lunch');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `recipe_images`
+--
+
+CREATE TABLE `recipe_images` (
+  `recipe_image_id` int(11) NOT NULL,
+  `recipe_image` varchar(32) NOT NULL,
+  `recipe_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -354,6 +383,13 @@ CREATE TABLE `recipe_ingredients` (
   `ingredient_id` int(11) NOT NULL,
   `allergen_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `recipe_ingredients`
+--
+
+INSERT INTO `recipe_ingredients` (`recipe_id`, `measurement_id`, `measurement_qty_id`, `ingredient_id`, `allergen_id`) VALUES
+(2, 2, 8, 204, 0);
 
 --
 -- Indexes for dumped tables
@@ -390,6 +426,12 @@ ALTER TABLE `recipe`
   ADD PRIMARY KEY (`recipe_id`);
 
 --
+-- Indexes for table `recipe_images`
+--
+ALTER TABLE `recipe_images`
+  ADD PRIMARY KEY (`recipe_image_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -397,7 +439,7 @@ ALTER TABLE `recipe`
 -- AUTO_INCREMENT for table `allergen`
 --
 ALTER TABLE `allergen`
-  MODIFY `allergen_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `allergen_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `ingredients`
@@ -409,7 +451,7 @@ ALTER TABLE `ingredients`
 -- AUTO_INCREMENT for table `measurement`
 --
 ALTER TABLE `measurement`
-  MODIFY `measurement_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `measurement_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `meaurement_qty`
@@ -421,7 +463,7 @@ ALTER TABLE `meaurement_qty`
 -- AUTO_INCREMENT for table `recipe`
 --
 ALTER TABLE `recipe`
-  MODIFY `recipe_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `recipe_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
