@@ -18,36 +18,37 @@
     </select>
     <label>Avoid</label>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="avoid[]" value="gluten">
   <label class="form-check-label" for="inlineCheckbox1">Gluten</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="avoid[]" value="dairy">
   <label class="form-check-label" for="inlineCheckbox2">Dairy</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="avoid[]" value="sugar">
   <label class="form-check-label" for="inlineCheckbox1">Sugar</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="avoid[]" value="coconut">
   <label class="form-check-label" for="inlineCheckbox2">Coconut</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="avoid[]" value="shellfish">
   <label class="form-check-label" for="inlineCheckbox1">Shellfish</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="avoid[]" value="eggs">
   <label class="form-check-label" for="inlineCheckbox2">Eggs</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="avoid[]" value="nuts">
   <label class="form-check-label" for="inlineCheckbox2">Nuts</label>
 </div>
 <button class="add-button bold" id="user">Search</button><br>
     </form>
     </header>
+  
     <table id="publictable">
       <tr>
         <th>Name</th>
@@ -58,10 +59,14 @@
       <tr>
         <td><?php echo $r['recipe_name']; ?></td>
         <td><?php echo $r['category']; ?></td>
-        <td><button type="button" class="btn btn-primary btn-sm" action="display_recipe">View</button></td>
+        <form action="single_recipe.php" id="single_recipe" method="POST">
+          <input type="hidden" name="rid" value="<? echo $r['recipe_id']; ?>">
+        <td><input type="submit" name="submit" value="View"></td>
       </tr>
+      </form>
       <?php endforeach; ?>  
     </table>
+
 
 
 <?php include('footer.php'); ?>
