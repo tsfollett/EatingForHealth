@@ -92,15 +92,73 @@
                     <li>Sunflower butter</li>
                     <li>Almond butter</li>
                     <li>Cream of Buckwheat</li>
-                    <li>Organic spices</li>
+                    <li>Organic fruits &amp; vegetables</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 <hr>
-<!--And then there's Sprouts (Miyokos, Kite Hill, hummus, Lily's, no sugar added So Delicious coconut ice cream)...
-And Sam's Club (Apple Cider Vinegar, Almond Flour, uncured turkey bacon, coconut oil, avocado oil, rotisserie chicken for those on the go). 
-And the natural section in King Soopers can carry a lot if you have a big one.-->
+<div class="row">
+    <div class="col-md-3 text-center">
+        <img src="images/resources-pg/sprouts-logo.png" alt="Sprouts Logo" width="200px">
+    </div>
+    <div class="col-md-9">
+        <h6>Items at Sprouts&colon;</h6>
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>Organic hummus</li>
+                    <li>Nuts &#40;almonds, walnuts, cashews, macademia&#41;</li>
+                    <li>Uncured Bacon &#40;if pork allowed&#41;</li>
+                    <li>Flours&colon; coconut, buckwheat, garbanzo, brown rice</li>
+                    <li>So Delicious no sugar added ice cream</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>Dairy-free items &#40;check ingredients&#41;</li>
+                    <li>Mineral salt</li>
+                    <li>Sunflower butter</li>
+                    <li>Almond butter</li>
+                    <li>Organic fruits &amp; vegetables</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-3 text-center">
+        <img src="images/resources-pg/Sams_Club.png" alt="Sam's Club Logo" width="200px">
+    </div>
+    <div class="col-md-9">
+        <h6>Items at Sam&rsquo;s Club&colon;</h6>
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>Apple cider vinegar</li>
+                    <li>Nuts &#40;almonds, walnuts, cashews, pecans&#41;</li>
+                    <li>Uncured turkey bacon</li>
+                    <li>Flours&colon; coconut, almond</li>
+                    <li>Coconut oil</li>
+                    <li>Hemp seeds</li>
+                    <li>Chia seeds</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>Avocado oil</li>
+                    <li>Mineral salt</li>
+                    <li>Sunflower butter</li>
+                    <li>Almond butter</li>
+                    <li>Zucchini noodles &#40;frozen section&#41;</li>
+                    <li>Riced cauliflower &#40;frozen section&#41;</li>
+                    <li>Canned tuna</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php include('footer.php')?>
