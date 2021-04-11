@@ -24,7 +24,7 @@ function get_recipe($id) {
 function get_ingredients($id) {
     global $db;
     $query = 'SELECT Q.measurement_qty, M.measurement, I.ingredient_name FROM recipe_ingredients X
-    LEFT JOIN meaurement_qty Q on X.measurement_qty_id = Q.measurement_qty_id
+    LEFT JOIN measurement_qty Q on X.measurement_qty_id = Q.measurement_qty_id
     LEFT JOIN measurement M on X.measurement_id = M.measurement_id
     LEFT JOIN ingredients I on X.ingredient_id = I.ingredient_id WHERE X.recipe_id = :id';
     $statement = $db->prepare($query);
@@ -33,5 +33,12 @@ function get_ingredients($id) {
     $ingredients = $statement->fetchAll();
     $statement->closeCursor();
     return $ingredients;
+}
+
+function get_image($id) {
+    global $db;
+    $query = 'SELECT A.recipe_image FROM recipe_image A
+    LEFT JOIN '
+
 }
 

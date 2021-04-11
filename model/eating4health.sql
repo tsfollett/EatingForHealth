@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2021 at 12:18 AM
+-- Generation Time: Apr 12, 2021 at 12:56 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -312,19 +312,19 @@ INSERT INTO `measurement` (`measurement_id`, `measurement`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `meaurement_qty`
+-- Table structure for table `measurement_qty`
 --
 
-CREATE TABLE `meaurement_qty` (
+CREATE TABLE `measurement_qty` (
   `measurement_qty_id` int(11) NOT NULL,
   `measurement_qty` varchar(29) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `meaurement_qty`
+-- Dumping data for table `measurement_qty`
 --
 
-INSERT INTO `meaurement_qty` (`measurement_qty_id`, `measurement_qty`) VALUES
+INSERT INTO `measurement_qty` (`measurement_qty_id`, `measurement_qty`) VALUES
 (1, '1'),
 (2, '2'),
 (3, '3'),
@@ -414,9 +414,9 @@ ALTER TABLE `measurement`
   ADD PRIMARY KEY (`measurement_id`);
 
 --
--- Indexes for table `meaurement_qty`
+-- Indexes for table `measurement_qty`
 --
-ALTER TABLE `meaurement_qty`
+ALTER TABLE `measurement_qty`
   ADD PRIMARY KEY (`measurement_qty_id`);
 
 --
@@ -454,9 +454,9 @@ ALTER TABLE `measurement`
   MODIFY `measurement_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `meaurement_qty`
+-- AUTO_INCREMENT for table `measurement_qty`
 --
-ALTER TABLE `meaurement_qty`
+ALTER TABLE `measurement_qty`
   MODIFY `measurement_qty_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
