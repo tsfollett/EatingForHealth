@@ -1,6 +1,9 @@
 <?php
     require('model/database.php');
 
+    $avoid = filter_input(INPUT_POST, 'avoid', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
+    $meal = filter_input(INPUT_POST, 'mealid', FILTER_VALIDATE_INT);
+
     $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);
     if (!$action) {
         $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
@@ -14,6 +17,6 @@
             include('view/welcome.php');
             break;
         default:
-            include('view/welcome.php');
+            $recipe = get_recipes();
     }
     
