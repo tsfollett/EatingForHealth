@@ -59,9 +59,8 @@
       <tr>
         <td><?php echo $r['recipe_name']; ?></td>
         <td><?php echo $r['category']; ?></td>
-        <form action="single_recipe.php" id="single_recipe" method="POST">
-          <input type="hidden" name="rid" value="<? echo $r['recipe_id']; ?>">
-        <td><input type="submit" name="submit" value="View"></td>
+        <form action="single_recipe.php?rid=<?php echo $r['recipe_id'] ?>" id="single_recipe" method="POST">
+        <td><input type="submit" name="view" value="View"></td>
       </tr>
       </form>
       <?php endforeach; ?>  
