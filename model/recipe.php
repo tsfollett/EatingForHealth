@@ -37,8 +37,12 @@ function get_ingredients($id) {
 
 function get_image($id) {
     global $db;
-    $query = 'SELECT A.recipe_image FROM recipe_image A
-    LEFT JOIN '
-
+    $query = 'SELECT recipe_image FROM recipe_images WHERE recipe_id = :id';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':id', $id);
+    $statement->execute();
+    $image = $statement->fetch();
+    $statement->closeCursor();
+    return $image;
 }
 
