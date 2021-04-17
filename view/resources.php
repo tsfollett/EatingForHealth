@@ -28,11 +28,11 @@
 <hr>
 <h4><u>Other Resources&colon;</u></h4>
 <div class="card-group">
-  <div class="card"><a href="resource-shopping.php">
-    <img class="card-img-top" src="images/resources-pg/shopping.png" 
-        alt="images with logos of Costco, Sam's Club, Natural Grocers, King Soopers and Trader Joe's" height="200px">
+  <div class="card"><a href="resource-tips.php">
+    <img class="card-img-top" src="images/resources-pg/tips.png" 
+        alt="blue image with words 'tips & tricks, to make your life healthier'" height="200px">
     <div class="card-body">
-      <h5 class="card-title text-center text-white bg-dark align-bottom">Shopping</h5>
+      <h5 class="card-title text-center text-white bg-dark align-bottom">General Tips</h5>
     </div></a>
   </div>
   <div class="card"><a href="resource-dirty-dozen.php">
@@ -54,11 +54,11 @@
 </div>
 
 <div class="card-group">
-  <div class="card"><a href="resource-tips.php">
-    <img class="card-img-top" src="images/resources-pg/tips.png" 
-        alt="blue image with words 'tips & tricks, to make your life healthier'" height="200px">
+  <div class="card"><a href="resource-shopping.php">
+    <img class="card-img-top" src="images/resources-pg/shopping.png" 
+        alt="images with logos of Costco, Sam's Club, Natural Grocers, King Soopers and Trader Joe's" height="200px">
     <div class="card-body">
-      <h5 class="card-title text-center text-white bg-dark align-bottom">General Tips</h5>
+      <h5 class="card-title text-center text-white bg-dark align-bottom">Shopping</h5>
     </div></a>
   </div>
   <div class="card"><a href="resource-cleaning.php">

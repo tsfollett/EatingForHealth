@@ -69,6 +69,8 @@
     <li>To learn how to find and choose healthy food in the store, including how to read ingredient lists</li>
     <li>To make sure you are drinking enough water every day &#40;drink 1/2 of your body&rsquo;s weight&#41;</li>
     <li>To learn to include protein and vegetables in your meals</li>
+    <li>Learn more about the benefits of the elimination diet in Dr. Shannon&rsquo;s blog&colon; 
+        <a href="https://www.newbeginningsfmc.com/food-sensitivities" target="_blank">Food Sensitivities</a></li>
   </ol>
 <p><a href="resource_files/goalsOfDiet.pdf" target="_blank">Download the goals list</a> &#40;PDF&#41;</p>
 
