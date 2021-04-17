@@ -54,7 +54,8 @@
         <th>Name</th>
         <th>Category</th>
       </tr>
-      <?php $recipe = get_recipes(); ?>
+      <?php
+      $recipe = Recipe::get_all_recipes(); ?>
       <?php foreach ($recipe as $r) : ?>
       <tr>
         <td><?php echo $r['recipe_name']; ?></td>

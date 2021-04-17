@@ -3,14 +3,14 @@
 <?php require('../model/database.php') ?>
 
 <?php $id = filter_input(INPUT_GET, 'rid', FILTER_VALIDATE_INT);
-$ingredients = get_ingredients($id);
-$recipe = get_recipe($id);
-$img = get_image($id);
+$ingredients = Recipe::get_ingredients($id);
+$recipe = Recipe::get_recipe($id);
+$img = Recipe::get_image($id);
 ?>
 
 <main>
 <h1 style="text-align: center;"><?php echo $recipe['recipe_name']; ?></h1>
-<?php echo '<img src="images/' . $img['recipe_image'] . '">' ?>
+<?php echo '<img src="images/recipes/' . $img['recipe_image'] . '">' ?>
 <div id="column1" style="float:left; width:23%; padding: 0 10px;">
 <h2 style="text-align: center;">Ingredients</h2>
 <ul>
